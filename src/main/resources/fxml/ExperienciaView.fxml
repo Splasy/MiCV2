@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="view" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="430.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addExeperienciaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddExpAction" text="Añadir">
+               <VBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="cancelarButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onEliminarAction" text="Eliminar">
+               <VBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <TableView fx:id="tableView" editable="true" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="desdeColumn" prefWidth="75.0" text="Desde" />
+          <TableColumn fx:id="hastaColumn" prefWidth="75.0" text="Hasta" />
+            <TableColumn fx:id="denominacionColumn" prefWidth="107.0" text="Denominación" />
+            <TableColumn fx:id="empleadorColumn" prefWidth="116.0" text="Empleador" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="3.0" right="2.0" top="3.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>
