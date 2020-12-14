@@ -144,7 +144,7 @@ public class ExperienciaController implements Initializable {
 		stage.initOwner(view.getScene().getWindow());
 		stage.setScene(scene);
 		((Stage) stage.getScene().getWindow()).getIcons().add(new Image("/images/cv64x64.png"));
-		stage.setResizable(true);
+		stage.setResizable(false);
 		stage.show();
 	}
 
