@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane fx:id="view" hgap="5.0" prefHeight="480.0" prefWidth="640.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane fx:id="view" hgap="5.0" prefHeight="480.0" prefWidth="640.0" vgap="5.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
    <rowConstraints>
       <RowConstraints minHeight="30.0" prefHeight="30.0" />
       <RowConstraints minHeight="30.0" prefHeight="30.0" />
