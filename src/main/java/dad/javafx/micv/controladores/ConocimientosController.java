@@ -146,6 +146,7 @@ public class ConocimientosController implements Initializable {
 		datosCono.setNivel(conocimientoCombo.getValue());
 
 		conocimiento.add(datosCono);
+		stage.close();
 	}
 
 	@FXML
@@ -181,6 +182,7 @@ public class ConocimientosController implements Initializable {
 		datosIdioma.setIdioma(idioma);
 
 		conocimiento.add(datosIdioma);
+		stage.close();
 	}
 
 	@FXML

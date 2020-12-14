@@ -128,6 +128,7 @@ public class ExperienciaController implements Initializable {
 		datos.setEmpleador(empleadorText.getText());
 
 		experiencia.add(datos);
+		stage.close();
 	}
 
 	@FXML

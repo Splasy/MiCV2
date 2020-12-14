@@ -127,6 +127,7 @@ public class FormacionController implements Initializable {
 		titulo.setHasta(datePickerHasta.getValue());
 
 		formacion.add(titulo);
+		stage.close();
 	}
 
 	@FXML
@@ -143,7 +144,7 @@ public class FormacionController implements Initializable {
 		stage.setScene(scene);
 		((Stage) stage.getScene().getWindow()).getIcons().add(new Image("/images/cv64x64.png"));
 		stage.setResizable(false);
-		stage.show();
+		stage.showAndWait();
 	}
 
 	@FXML
